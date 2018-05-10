@@ -81,7 +81,8 @@ public class LoginActivity extends Activity implements RadioGroup.OnCheckedChang
                 YoYo.with(Techniques.Shake).duration(700).playOn(validation_key_txt);
           } else {
                 appstate.OpenProgressBar(this);
-                Wallet iw = new Wallet();
+                Wallet iw =  new Wallet();
+
             if (iw.ImportExistingWallet(this,""+privateKeyInput,"password")) {
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);

@@ -41,7 +41,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
   private Wallet wallet;
   private MyApplication appstate;
 
-  public static String accountAddress;
+  public static  String accountAddress;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

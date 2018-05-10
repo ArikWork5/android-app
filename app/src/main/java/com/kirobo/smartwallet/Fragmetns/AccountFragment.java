@@ -31,6 +31,7 @@ public class AccountFragment extends Fragment  implements View.OnClickListener{
 
     appstate = (MyApplication)getActivity().getApplicationContext();
     connect_btn = (TextView) view.findViewById(R.id.connect_btn);
+
     connect_btn.setOnClickListener(this);
 
   }
@@ -47,8 +48,7 @@ public class AccountFragment extends Fragment  implements View.OnClickListener{
 
   @Override
   public void onClick(View v) {
+    Log.d("rrerer", "!!!!: ");
     appstate.OpenProgressBar(getActivity());
-
-
   }
 }
