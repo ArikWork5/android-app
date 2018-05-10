@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Fragmetns.TranssactionFragment">
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/address_title"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="My Address"
+    android:textSize="25dp"/>
+
+  <TextView
+    android:padding="10dp"
+    android:id="@+id/address_info"
+    android:gravity="center"
+    android:layout_below="@+id/address_title"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your personal account address.\nAnyone in the Ethrium network can make transactions to your account at this address."
+    android:textSize="14dp"/>
+
+    <RelativeLayout
+      android:layout_marginRight="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_below="@+id/address_info"
+      android:id="@+id/spereator1"
+      android:layout_marginTop="10dp"
+      android:background="#e2e2e2"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"></RelativeLayout>
+
+    <RelativeLayout
+      android:id="@+id/address_info_lay"
+      android:layout_below="@+id/spereator1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      >
+
+    <TextView
+      android:padding="5dp"
+      android:textStyle="bold"
+      android:id="@+id/address_myaddress"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="---"
+      android:textSize="15dp"/>
+
+    <ImageView
+      android:layout_centerInParent="true"
+      android:layout_marginRight="3dp"
+      android:layout_toLeftOf="@+id/address_myaddress"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:src="@drawable/share"
+      android:scaleType="fitXY"
+      android:alpha="0.6"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+      android:layout_below="@+id/address_info_lay"
+      android:layout_marginRight="10dp"
+      android:layout_marginLeft="10dp"
+      android:id="@+id/spereator2"
+      android:background="#e2e2e2"
+      android:layout_width="match_parent"
+      android:layout_height="1dp">
+    </RelativeLayout>
+
+    <ImageView
+      android:layout_centerInParent="true"
+      android:layout_below="@+id/spereator2"
+      android:id="@+id/qr_img"
+      android:layout_width="800px"
+      android:layout_height="800px"
+      android:scaleType="fitXY"/>
+
+    <TextView
+      android:layout_below="@+id/qr_img"
+      android:id="@+id/scan_for_address"
+      android:gravity="center"
+      android:layout_marginTop="-30dp"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#bebebe"
+      android:text="Scane QR Code to get your account number"
+      android:textSize="13dp"/>
+
+  </RelativeLayout>
+
+
+</FrameLayout>

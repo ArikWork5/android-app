@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Fragmetns.TranssactionFragment">
+
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/send_title"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Send Transaction"
+    android:textSize="25dp"/>
+
+  <TextView
+    android:padding="10dp"
+    android:id="@+id/send_info"
+    android:gravity="center"
+    android:layout_below="@+id/send_title"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="If you plan to move a large amount of Ether or tokens, you should send a test transaction of a small amount to the destination wallet first to ensure everything goes as planned. Optional."
+    android:textSize="14dp"/>
+
+  <TextView
+    android:layout_below="@+id/send_info"
+    android:id="@+id/current_eth_balance_title"
+    android:layout_marginTop="10dp"
+    android:textColor="#bab7b7"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Current balance"
+    android:textSize="15dp"/>
+
+  <TextView
+    android:layout_below="@+id/current_eth_balance_title"
+    android:id="@+id/current_balance_amount"
+    android:layout_marginTop="2dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="---"
+    android:textSize="15dp"/>
+
+  <TextView
+    android:layout_below="@+id/current_balance_amount"
+    android:id="@+id/current_balance_usd_title"
+    android:layout_marginTop="10dp"
+    android:textColor="#bab7b7"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Current account address"
+    android:textSize="15dp"/>
+
+  <TextView
+    android:layout_below="@+id/current_balance_usd_title"
+    android:id="@+id/current_account_address_value"
+    android:layout_marginTop="2dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="---"
+    android:textSize="15dp"/>
+
+  <RelativeLayout
+    android:id="@+id/sperator"
+    android:layout_marginTop="10dp"
+    android:background="#e2e2e2"
+    android:layout_below="@+id/current_account_address_value"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"></RelativeLayout>
+
+
+  <EditText
+    android:id="@+id/send_to"
+  android:textSize="15dp"
+  android:layout_marginLeft="15dp"
+  android:layout_marginRight="15dp"
+  android:layout_below="@+id/sperator"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:hint="To"
+  android:padding="15dp"
+  />
+
+  <EditText
+    android:id="@+id/send_amount"
+    android:textSize="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_below="@+id/send_to"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Amount"
+    android:padding="15dp"
+    />
+
+
+
+<TextView
+  android:gravity="center"
+  android:textColor="#fff"
+  android:text="SEND"
+  android:background="#7cce88"
+  android:layout_marginTop="10dp"
+  android:layout_marginLeft="15dp"
+  android:layout_marginRight="15dp"
+  android:layout_below="@+id/send_amount"
+  android:layout_width="match_parent"
+  android:layout_height="40dp" />
+
+
+</RelativeLayout>
+
+</FrameLayout>

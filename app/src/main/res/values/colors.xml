@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <integer-array name="colors">
+    <item>@color/holo_blue_dark</item>
+    <item>@color/holo_porple_dark</item>
+
+  </integer-array>
+  <color name="holo_blue_dark">#407cc4</color>
+  <color name="holo_porple_dark">#624c9f</color>
+
+</resources>

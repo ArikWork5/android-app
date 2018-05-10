@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activities.MainActivity">
+
+  <RelativeLayout
+    android:id="@+id/top_bar"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#6161e4">
+
+    <ImageView
+      android:layout_marginLeft="20dp"
+      android:layout_centerVertical="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:scaleType="fitXY"
+      android:src="@drawable/logo"
+      />
+
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical">
+
+
+            <TextView
+              android:id="@+id/eth_txt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#ffffffff"
+              android:text="---"
+              android:layout_marginRight="14dp"
+              android:layout_alignParentRight="true"
+              android:textSize="16dp"
+              android:gravity="center"
+              />
+
+          <TextView
+            android:id="@+id/usd_txt"
+            android:layout_below="@+id/eth_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:text="---"
+            android:layout_marginRight="14dp"
+            android:layout_alignParentRight="true"
+            android:textSize="14dp"
+            android:gravity="center"
+            />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+  <android.support.v4.view.ViewPager
+    android:id="@+id/vp_container"
+    android:background="#ffffffff"
+    app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+    app:layout_constraintTop_toBottomOf="@+id/top_bar"
+    android:layout_height="0dp"
+    android:layout_width="match_parent" />
+
+  <RelativeLayout
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#c9c6c6"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+<!--bottom bar-->
+    <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      >
+
+      <RelativeLayout
+        android:id="@+id/transactions_lay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+       >
+        <ImageView
+          android:layout_centerHorizontal="true"
+          android:scaleType="fitXY"
+          android:id="@+id/transactions_img"
+          android:layout_above="@+id/transactions_txt"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:src="@drawable/transactions_y"/>
+
+        <TextView android:layout_height="wrap_content"
+          android:id="@+id/transactions_txt"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:textColor="#7b06c4"
+          android:text="Transactions"
+          android:textSize="13dp"
+          android:gravity="center_horizontal"
+          />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/send_lay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <ImageView
+          android:layout_centerHorizontal="true"
+          android:id="@+id/send_img"
+          android:scaleType="fitXY"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_above="@+id/send_txt"
+          android:src="@drawable/send_n"/>
+
+        <TextView android:layout_height="wrap_content"
+          android:id="@+id/send_txt"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:textColor="#535252"
+          android:text="Send"
+          android:textSize="13dp"
+          android:gravity="center_horizontal"
+
+          />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/my_address_lay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <ImageView
+          android:layout_centerHorizontal="true"
+          android:id="@+id/my_addres_img"
+          android:scaleType="fitXY"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_above="@+id/my_addres_txt"
+          android:src="@drawable/addres_n"/>
+
+        <TextView android:layout_height="wrap_content"
+          android:id="@+id/my_addres_txt"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:textColor="#535252"
+          android:text="Address"
+          android:textSize="13dp"
+          android:gravity="center_horizontal"
+          />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/account_lay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <ImageView
+          android:layout_centerHorizontal="true"
+          android:id="@+id/account_img"
+          android:scaleType="fitXY"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_above="@+id/account_txt"
+          android:src="@drawable/account_n"/>
+
+        <TextView android:layout_height="wrap_content"
+          android:id="@+id/account_txt"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:textColor="#535252"
+          android:text="Account"
+          android:textSize="13dp"
+          android:gravity="center_horizontal"
+          />
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

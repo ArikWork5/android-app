@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:id="@+id/mainid"
+
+    >
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+       android:id="@+id/CircularProgressBar"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:indeterminate="true"
+        app:cpb_colors="@array/colors"
+      app:cpb_rotation_speed="1.0"
+      app:cpb_sweep_speed="1.7"
+        app:cpb_stroke_width="5dp"
+        app:cpb_min_sweep_angle="65"
+        app:cpb_max_sweep_angle="330"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:alpha="0.8"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon"
+        />
+
+    <TextView
+        android:id="@+id/txt_closingmeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:text="Closing Meal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/CircularProgressBar"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_calculating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:text="Calculating last bites..."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_closingmeal"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

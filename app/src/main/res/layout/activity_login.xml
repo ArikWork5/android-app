@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Activities.LoginActivity">
+
+<RelativeLayout
+  app:layout_marginTopPercent="20%"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  >
+
+  <RelativeLayout
+    android:id="@+id/logo_lay"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+      android:id="@+id/logo"
+      android:layout_width="200dp"
+      android:layout_height="60dp"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="0dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/logo" />
+
+  <TextView
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:id="@+id/smart_wallet_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SmartWallet"
+    android:layout_below="@+id/logo"
+    android:layout_marginTop="-10dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#ffff"
+
+    android:textSize="20dp"
+    />
+  </RelativeLayout>
+
+
+  <RelativeLayout
+    android:layout_marginTop="100dp"
+    android:layout_below="@+id/logo_lay"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+      android:id="@+id/wallet_tabs"
+      android:layout_centerHorizontal="true"
+      android:layoutDirection="ltr"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+
+      <RadioGroup
+        android:id="@+id/wallet_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <RadioButton
+          android:id="@+id/enter_your_wallet"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="0dp"
+          android:text="Enter Your Wallet"
+          android:textColor="#ffff"
+          android:background="@drawable/enter_wallet_slc"
+          android:button="@null"
+          android:checked="true"
+          android:gravity="center" />
+
+        <RadioButton
+          android:id="@+id/open_new_wallet"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="0dp"
+          android:text="Create New Wallet"
+          android:textColor="#ffff"
+          android:background="@drawable/new_wallet_slc"
+          android:button="@null"
+          android:gravity="center" />
+
+       </RadioGroup>
+    </LinearLayout>
+
+
+  <RelativeLayout
+      android:id="@+id/enter_lay"
+      android:layout_marginTop="15dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/wallet_tabs"
+      android:layout_centerHorizontal="true"
+
+    >
+
+    <ImageView
+      android:id="@+id/lock"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:scaleType="fitXY"
+      android:src="@drawable/lock" />
+
+    <EditText
+      android:layout_centerVertical="true"
+      android:id="@+id/private_key"
+      android:paddingLeft="3px"
+      android:paddingRight="3px"
+      android:background="#ffffff"
+      android:hint="Private Key"
+      android:maxLength="64"
+      android:maxLines="1"
+      android:inputType="textPassword"
+      android:layout_marginLeft="5dp"
+      android:textSize="14dp"
+      android:layout_toRightOf="@+id/lock"
+      android:text="8f7b0257f82d48fcd61935a7fb6876a9cbc405d809f4b6502916b6b54943d126"
+      android:scrollHorizontally="true"
+      android:layout_marginTop="35px"
+      android:layout_width="300dp"
+      android:layout_height="30dp"
+      android:visibility="visible"
+      />
+
+    <TextView
+      android:layout_centerVertical="true"
+      android:gravity="center"
+      android:background="@drawable/import_stroke"
+      android:id="@+id/import_wallet"
+      android:layout_width="wrap_content"
+      android:layout_height="31dp"
+      android:paddingLeft="3dp"
+      android:paddingRight="5dp"
+      android:layout_alignBaseline="@+id/private_key"
+      android:layout_toRightOf="@+id/private_key"
+      android:text="Import"
+      android:textColor="#ffffff"
+      android:textSize="14dp"
+
+      />
+
+    <TextView
+      android:id="@+id/validation_key_txt"
+      android:layout_marginTop="8dp"
+      android:layout_marginLeft="25dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="*Please enter a valid key with 64 digits."
+      android:textColor="#66a3ec"
+      android:layout_below="@+id/import_wallet"
+      android:visibility="invisible"/>
+
+    </RelativeLayout>
+  </RelativeLayout>
+</RelativeLayout>
+
+  <!--aasfasfasf-->
+
+  <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.design.widget.AppBarLayout>
+
+  </android.support.design.widget.CoordinatorLayout>
+
+</android.support.percent.PercentRelativeLayout>

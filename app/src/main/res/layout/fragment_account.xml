@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Fragmetns.AccountFragment">
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/send_title"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Account"
+    android:textSize="25dp"/>
+
+    <TextView
+      android:padding="10dp"
+      android:id="@+id/send_info"
+      android:gravity="center"
+      android:layout_below="@+id/send_title"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Full information about your account,\nWallet and Smart Contracts."
+      android:textSize="14dp"/>
+
+  <RelativeLayout
+    android:layout_below="@+id/send_info"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/separator"
+    android:background="#e2e2e2"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+
+    <TextView
+      android:layout_below="@+id/separator"
+      android:id="@+id/current_eth_balance_title"
+      android:layout_marginTop="10dp"
+      android:textColor="#bab7b7"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Current ETH Balance"
+      android:textSize="15dp"/>
+
+    <TextView
+      android:layout_below="@+id/current_eth_balance_title"
+      android:id="@+id/current_balance_amount"
+      android:layout_marginTop="2dp"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="---"
+      android:textSize="15dp"/>
+
+    <TextView
+      android:layout_below="@+id/current_balance_amount"
+      android:id="@+id/current_balance_usd_title"
+      android:layout_marginTop="10dp"
+      android:textColor="#bab7b7"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Current USD Balance"
+      android:textSize="15dp"/>
+
+    <TextView
+      android:layout_below="@+id/current_balance_usd_title"
+      android:id="@+id/current_account_address_value"
+      android:layout_marginTop="2dp"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="---"
+      android:textSize="15dp"/>
+
+    <RelativeLayout
+      android:layout_below="@+id/current_account_address_value"
+      android:layout_marginRight="10dp"
+      android:layout_marginLeft="10dp"
+      android:id="@+id/separator2"
+      android:background="#e2e2e2"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"/>
+
+    <EditText
+      android:maxLines="1"
+      android:maxLength="42"
+      android:id="@+id/input_smart_contract"
+      android:layout_marginTop="20dp"
+      android:textSize="15dp"
+      android:paddingLeft="3dp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/separator2"
+      android:hint="Enter Smart Contract Address"
+      android:text="0x058f7ceff4a998e5ce3ce7a8e913e32e9fa52601"
+      android:layout_marginRight="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/connect_btn"
+      android:gravity="center"
+      android:textColor="#fff"
+      android:text="CONNECT SMART CONTRACT"
+      android:background="#7cce88"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_below="@+id/input_smart_contract"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"/>
+
+</RelativeLayout>
+</FrameLayout>
